@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Family Book</title>
+</head>
+<body>
+    <H1>My family book</H1>
+    <p>This is my family</p>
+    <img id="img1" src="Family Book.jpg">
+    <p id="p1"></p>
+    <button type="button" onclick="nextpage()">Next Page</button>
+</body>
+<script>
+    var names = ["Sridhar Mukka", "Swapna Mukka", "Mourya Mukka"];
+    var images = ["Father.jpg", "mother.jpg", "brother.jpg"];
+    var i = 0;
+    function nextpage(){
+    
+    if (i>2) {
+    i = 0;
+    }
+    document.getElementById("p1").innerHTML = names[i];
+    document.getElementById("img1").src = images[i];
+    i++;
+    }
+</script>
+</html>
